@@ -1,0 +1,2 @@
+rootProject.name = "wado"
+include ':app'
