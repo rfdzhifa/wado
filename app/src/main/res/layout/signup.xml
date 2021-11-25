@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="Login"
+        android:text="Sign In"
         android:textSize="30dp"
         android:layout_marginTop="130dp"
         android:textColor="@color/primary"
@@ -82,12 +82,44 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addconfirmpassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="480dp"
+        android:hint="Confirm Password"
+        android:textColorHint="#5C1E272E"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="1.5dp"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:textColorHighlight="@color/textColorHighlight" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Login"
         android:paddingVertical="15dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="590dp"
         android:layout_marginHorizontal="25dp"
         android:textColor="#FFFFFF"
         android:text="Login"
@@ -113,7 +145,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
+            android:text="Already have an account?"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/primary"
@@ -124,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppins_medium"
-            android:text=" Sign Up"
+            android:text=" Sign In"
             android:textColor="@color/primary" />
 
     </LinearLayout>
