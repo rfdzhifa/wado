@@ -85,7 +85,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Login"
+        android:id="@+id/signin_button"
         android:paddingVertical="15dp"
         android:layout_marginTop="480dp"
         android:layout_marginHorizontal="25dp"
@@ -120,6 +120,7 @@
             android:alpha="0.6"/>
 
         <TextView
+            android:id="@+id/Signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
