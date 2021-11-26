@@ -17,18 +17,18 @@ class Signup : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
         val signin: TextView = findViewById(R.id.Signin)
-        signin.setOnClickListener{ Signup() }
+        signin.setOnClickListener{ SignIn() }
 
         val signupbotton: Button = findViewById(R.id.signup_button)
-        signupbotton.setOnClickListener { SignIn() }
+        signupbotton.setOnClickListener { Signup() }
     }
 
-    private fun Signup() {
+    private fun SignIn() {
         val intent = Intent(this, Signup::class.java)
         startActivity(intent)
     }
 
-    private fun SignIn() {
+    private fun Signup() {
         val intent = Intent(this, Home::class.java)
         startActivity(intent)
     }
